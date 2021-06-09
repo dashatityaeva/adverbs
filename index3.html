@@ -303,12 +303,12 @@
                             </a>
                         </div>
                     </div>
-                    <form action="" class="contacts__form">
-                        <input type="text" class="contacts__inp" placeholder="Ваше имя">
-                        <input type="text" class="contacts__inp contacts__inp--tel" value="" placeholder="+7 (___) ___-__-__">
-                        <textarea class="contacts__ta" name="" id="" placeholder="Коротко о задаче"></textarea>
+                    <form action="" class="contacts__form" action="POST" id="form-order">
+                        <input type="text" class="contacts__inp" placeholder="Ваше имя" name="user_name">
+                        <input type="text" class="contacts__inp contacts__inp--tel" name="user_phone" value="" placeholder="+7 (___) ___-__-__">
+                        <textarea class="contacts__ta" name="user_text" id="" placeholder="Коротко о задаче"></textarea>
                         <div class="contacts__btn-wrap">
-                            <button class="btn btn--blue contacts__btn">Отправить</button>
+                            <button type="submit" class="btn btn--blue contacts__btn">Отправить</button>
                             <p class="contacts__polity">Нажимая кнопку, вы соглашаетесь с <a class="contacts__polity-link" href="">политикой конфиденциальности</a></p>
                         </div>
                     </form>

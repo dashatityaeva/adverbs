@@ -87,3 +87,31 @@ function asyncCSS(href) {
 
 asyncCSS('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
+
+if (!!$('#form-order')) {
+
+  $('#form-order').validate({
+      rules: {
+        user_name: {
+              required: true,
+              minlength: 2
+          },
+          user_phone: {
+              required: true,
+              minlength: 10
+          },
+
+      },
+      messages: {
+        user_name: {
+              required: '',
+              minlength: ''
+          },
+          user_phone: {
+              required: '',
+              minlength: ''
+          },
+      },
+      errorClass: 'invalid'
+  });
+}
